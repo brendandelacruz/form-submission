@@ -12,12 +12,14 @@
 .main-image-container {
   display: none;
 }
-.header > img {
-  width: 75%;
+.header {
+  padding: 40px 0;
+  font-size: 30px;
+  font-weight: 800;
+  font-family: cursive;
 }
 .top-container {
   text-align: center;
-  border: 1px solid lightgrey;
   margin-bottom: 10px;
 }
 input[type="password"], input[type="email"], input[type="submit"] {
@@ -85,7 +87,6 @@ h4:after {
   font-size: 13px;
 }
 .middle-container {
-  border: 1px solid lightgrey;
   margin-bottom: 18px;
   display: flex;
   justify-content: center;
@@ -148,8 +149,26 @@ h4:after {
   font-size: 12px;
   font-weight: 400;
 }
-/* Large devices (laptops/desktops, 875px and up) */
-@media only screen and (min-width: 875px) {
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 450px) {
+  body {
+    background-color: #f1f1f1
+  }
+  .top-container {
+    background-color: white;
+    border: 1px solid lightgrey;
+  }
+  .middle-container {
+    background-color: white;
+    border: 1px solid lightgrey;
+    margin: 10px 0;
+    padding: 20px 0;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
   .outer-container {
     display: flex;
     width: 760px;
